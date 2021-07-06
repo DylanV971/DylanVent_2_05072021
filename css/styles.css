@@ -24,6 +24,12 @@ a {
     text-decoration: none;
 }
 
+/* Gras */
+
+.gras {
+    font-weight: 800;
+}
+
 /* Entete  */
 
 .entete {
@@ -99,14 +105,13 @@ nav {
 
 /* Contenu principal --> main */
 
-/* 
 main {
-    padding: 0 20px;
-} */
+    padding: 0 10px;
+}
 
 /*  Barre de recherche */
 
-.trouver-hebergement p {
+.trouver-hebergement + p {
     margin-bottom: 36px;
 }
 
@@ -161,3 +166,39 @@ form {
     margin-top: -1px
 }
 
+/* Filtres */
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button-filtre {
+    display: flex;
+    border: 2px solid #dddddd;
+    border-radius: 46px;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+/* Button filtre */
+
+.icone-button {
+    background-color: #deebff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 51px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 13px;
+    margin-right: 12px;
+    text-align: center;
+    color: #0065fc;
+    font-size: 17px;
+}
+
+.button-filtre > p {
+    margin-right: 16px;
+}
