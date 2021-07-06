@@ -64,7 +64,7 @@ nav {
     color: inherit;
 }
 
-/* Liens mobile */
+/* Lien mobile */
 
 #lien-inscription-mobile {
     color: #0065fc;
@@ -95,5 +95,69 @@ nav {
     padding:  0 35px 20px 35px;
     border-bottom: 3px solid #f2f2f2 ;
     width: 100%;
+}
+
+/* Contenu principal --> main */
+
+/* 
+main {
+    padding: 0 20px;
+} */
+
+/*  Barre de recherche */
+
+.trouver-hebergement p {
+    margin-bottom: 36px;
+}
+
+form {
+    display: flex;
+}
+
+/* Icone localisation barre de recherche */
+
+.icone-localisation {
+    background-color: #f2f2f2;
+    height: 51px;
+    width: 52px ; /*13%*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 13px 0px 0px 13px;
+}
+
+/* Zone de saisie */
+
+.zone-recherche {
+    max-width: 66%; 
+    height: 51px;
+    border: 1px solid #f2f2f2;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.zone-recherche::placeholder {
+    color: #000;
+}
+
+/*  Button de recherche desktop cacher */
+
+#recherche-desktop {
+    display: none;
+}
+
+.button-recherche {
+    width: 51px;
+    height: 53px;
+    border-radius: 13px;
+    border: 1px solid #f2f2f2;
+    background-color: #0065fc;
+    color: #fff;
+    margin-left: -20px;
+    margin-top: -1px
 }
 
