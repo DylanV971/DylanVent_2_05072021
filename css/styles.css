@@ -105,6 +105,7 @@ nav {
 
 /* Contenu principal --> main */
 
+
 main {
     padding: 0 10px;
 }
@@ -167,6 +168,7 @@ form {
 }
 
 /* Filtres */
+
 .filtres {
     display: flex;
     flex-wrap: wrap;
@@ -201,4 +203,20 @@ form {
 
 .button-filtre > p {
     margin-right: 16px;
+}
+
+/* Infos-logement */
+
+.infos-logements {
+    display: flex;
+    align-items: center;
+}
+
+.icone-infos {
+    border:  1px solid #d9d9d9;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: #0065fc;
+    font-size: 14px;
+    margin-right: 12px;
 }
