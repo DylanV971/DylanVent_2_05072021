@@ -175,6 +175,8 @@ form {
     width: 100%;
 }
 
+/* Button filtre */
+
 .button-filtre {
     display: flex;
     border: 2px solid #dddddd;
@@ -183,7 +185,10 @@ form {
     margin-top: 10px;
 }
 
-/* Button filtre */
+.button-filtre:hover {
+    border-color: rgb(202, 202, 202);
+    background-color: #F2F2F2;
+}
 
 .icone-button {
     background-color: #deebff;
@@ -220,3 +225,7 @@ form {
     font-size: 14px;
     margin-right: 12px;
 }
+
+
+
+
