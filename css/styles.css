@@ -295,6 +295,13 @@ form {
     margin-bottom: 11px;
 }
 
+.carte-populaire a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+}
+
 /* Effet au survol carte populaire */
 
 .carte-populaire:hover {
@@ -390,6 +397,12 @@ form {
     transform: scale(1.03);
 }
 
+.carte-hebergement a {
+    color: #000;
+    text-decoration: none;
+    display: initial;
+}
+
 
 .image-carte-hebergement {
     width: 100%;
@@ -442,3 +455,7 @@ form {
 .avis {
     font-size: 15px;
 }
+
+
+/* Section activité */
+
