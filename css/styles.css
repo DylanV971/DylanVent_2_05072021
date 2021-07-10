@@ -4,9 +4,9 @@ dans la largeur des éléments
 
 */
 
-/* html {
-    border: 3px solid purple;
-} */
+html {
+    /* border: 3px solid purple; */
+}
 
 * {
     box-sizing: border-box;
@@ -24,7 +24,11 @@ body {
 
 
 h2 {
-    font-size: 21px;
+    font-size: 18px; /*21 */
+}
+
+h3 {
+    font-size: 17px;
 }
 /* Lien */
 
@@ -260,17 +264,26 @@ form {
 
 .titre-populaire {
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.conteneur-cartes-populaires {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 .icone-titre-populaire {
     margin-left: 104px;
 }
 
-/* Cartes  Populaires */
+/* Cartes Populaires */
 
 .carte-populaire {
     background-color:  #fff;
+    width: 100%;
     max-width: 334px;     
     height: 144px;
     border-radius: 17px;
@@ -292,12 +305,13 @@ form {
 /* paramètre carte populaire */
 
 .image-carte-populaire {
-    width: 127px;
+    width: 100%;
+    max-width: 127px;
     height: 134px;
     border-radius: 13px 0 0px 13px;
 }
 
-/* Cartes  Populaires*/
+/* images  Populaires*/
 
 .carte-populaire-1 {
     background: url(../images/hebergements/hotel-le-soleil.jpg) no-repeat center / cover;
@@ -319,7 +333,7 @@ form {
 }
 
 .description-carte-populaire h3 {
-    /* font-size: 16px; */
+    /* font-size: 17px; */
     margin-top: 8px;
     margin-bottom: 9px;
 }
@@ -335,9 +349,32 @@ form {
 
 /* Section hébergement */
 
+.conteneur-hebergements {
+    padding: 20px;
+}
+
+.titre-hebergement {
+    display: flex;
+    justify-content: center;
+    margin-right: 64px;
+}
+
+.conteneur-hebergements > p {
+    text-align: center;
+    margin-right: 200px;
+}
+
+
+.conteneur-cartes-hebergements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .carte-hebergement {
     background-color:  #fff;
     width: 100%;     
+    max-width: 335px;
     height: 199px;
     border-radius: 17px;
     padding: 5px;
@@ -360,7 +397,7 @@ form {
     border-radius: 13px 13px 0 0;
 }
 
-/* Carte  hebergement*/
+/* images hébergements*/
 
 .carte-hebergement-1 {
     background: url(../images/hebergements/auberge-la-cannebière.jpg) no-repeat center / cover;
@@ -398,7 +435,7 @@ form {
 }
 
 
-.description-carte-hebergement p {
+.description-carte-hebergement  p {
    margin: 0 0 6px 0;
 }
 
