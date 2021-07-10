@@ -4,6 +4,10 @@ dans la largeur des éléments
 
 */
 
+/* html {
+    border: 3px solid purple;
+} */
+
 * {
     box-sizing: border-box;
 }
@@ -120,6 +124,7 @@ nav {
 /* Contenu principal --> main */
 
 main {
+    /* border: 3px solid green; */
     padding: 0 10px;
 }
 
@@ -239,9 +244,10 @@ form {
     margin-right: 12px;
 }
 
-/* Hebergements */
+/* Section Hebergements */
 
 #hebergements {
+    /* border: 3px solid orange; */
     margin-top: 39px;
 }
 
@@ -305,7 +311,7 @@ form {
     background: url(../images/hebergements/hotel-tout-bleu-blanc.jpg) no-repeat center / cover;
 }
 
-/* Description */
+/* Description carte populaire*/
 
 .description-carte-populaire {
     overflow:auto;
@@ -327,4 +333,75 @@ form {
     font-size: 16px;
 }
 
+/* Section hébergement */
 
+.carte-hebergement {
+    background-color:  #fff;
+    width: 100%;     
+    height: 199px;
+    border-radius: 17px;
+    padding: 5px;
+    box-shadow: 2px 2px 6px #b8b8b8;
+    transition: ease;
+    cursor: pointer;
+    overflow: auto;
+    margin-bottom: 12px;
+}
+
+.carte-hebergement:hover {
+    box-shadow: 2px 2px 6px #797979;
+    transform: scale(1.03);
+}
+
+
+.image-carte-hebergement {
+    width: 100%;
+    height: 114px;
+    border-radius: 13px 13px 0 0;
+}
+
+/* Carte  hebergement*/
+
+.carte-hebergement-1 {
+    background: url(../images/hebergements/auberge-la-cannebière.jpg) no-repeat center / cover;
+}
+
+.carte-hebergement-2 {
+    background: url(../images/hebergements/hotel-du-port.jpg) no-repeat center / cover;
+}
+
+.carte-hebergement-3 {
+    background: url(../images/hebergements/hotel-les-mouettes.jpg) no-repeat center / cover;
+}
+
+.carte-hebergement-4 {
+    background: url(../images/hebergements/hotel-de-la-mer.jpg) no-repeat center / cover;
+}
+
+.carte-hebergement-5 {
+    background: url(../images/hebergements/auberge-le-panier.jpg) no-repeat center / cover;
+}
+
+.carte-hebergement-6 {
+    background: url(../images/hebergements/hotel-chez-amina.jpg) no-repeat center / cover;
+}
+
+/* contenu carte hebergement*/
+
+.description-carte-hebergement {
+    /* overflow:auto; */
+    padding: 4px 9px;
+}
+
+.description-carte-hebergement h3 {
+   margin: 0 0 6px 0;
+}
+
+
+.description-carte-hebergement p {
+   margin: 0 0 6px 0;
+}
+
+.avis {
+    font-size: 15px;
+}
