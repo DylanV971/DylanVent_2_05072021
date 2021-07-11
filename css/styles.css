@@ -4,10 +4,6 @@ dans la largeur des éléments
 
 */
 
-html {
-    border: 3px solid purple;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -22,7 +18,6 @@ body {
     color: #000;
 }
 
-
 h2 {
     font-size: 18px; /*21 */
 }
@@ -30,6 +25,7 @@ h2 {
 h3 {
     font-size: 17px;
 }
+
 /* Lien */
 
 a {
@@ -127,9 +123,10 @@ nav {
 
 /* Contenu principal --> main */
 
+/* 
 main {
-    /* border: 3px solid green; */
-}
+    border: 3px solid green;
+} */
 
 /*  Barre de recherche */
 
@@ -254,7 +251,6 @@ form {
 /* Section Hebergements */
 
 #hebergements {
-    /* border: 3px solid orange; */
     margin-top: 39px;
 }
 
@@ -343,7 +339,6 @@ form {
 }
 
 .description-carte-populaire h3 {
-    /* font-size: 17px; */
     margin-top: 8px;
     margin-bottom: 9px;
 }
@@ -460,10 +455,6 @@ form {
 }
 
 /* Section activité */
-
-#activites {
-    /* border: 3px solid blueviolet; */
-}
 
 .titre-activite {
     display: flex;    
