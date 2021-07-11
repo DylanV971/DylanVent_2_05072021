@@ -5,7 +5,7 @@ dans la largeur des éléments
 */
 
 html {
-    /* border: 3px solid purple; */
+    border: 3px solid purple;
 }
 
 * {
@@ -129,10 +129,13 @@ nav {
 
 main {
     /* border: 3px solid green; */
-    padding: 0 10px;
 }
 
 /*  Barre de recherche */
+
+.trouver-hebergement {
+    padding: 0 10px;
+}
 
 .trouver-hebergement + p {
     margin-bottom: 36px;
@@ -466,7 +469,7 @@ form {
     display: flex;    
     justify-content: center;
     margin-right: 159px;
-    margin-left: 24px
+    margin-left: 24px;
 }
 
 .conteneur-cartes-activites {
@@ -612,4 +615,37 @@ form {
     border-radius: 0 0 14px 14px;
     box-shadow: 0px 0px 8px #d8d8d8;
     padding: 0 19px;
+}
+
+/* pied de page --> footer */
+
+.conteneur-navigation-footer {
+    background-color: #f2f2f2;
+    padding: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navigation-footer {
+    width: 100%;
+    max-width: 332px;
+
+}
+
+.navigation-footer ul {
+    list-style: none;
+    padding-left: 0;
+    /* width: 70%; */
+
+}
+
+.navigation-footer li {
+    margin-top: 19px;
+}
+
+
+.navigation-footer a {
+   color: #3c3c3c;
 }
