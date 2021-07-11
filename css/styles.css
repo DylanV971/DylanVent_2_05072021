@@ -456,6 +456,160 @@ form {
     font-size: 15px;
 }
 
-
 /* Section activité */
 
+#activites {
+    /* border: 3px solid blueviolet; */
+}
+
+.titre-activite {
+    display: flex;    
+    justify-content: center;
+    margin-right: 159px;
+    margin-left: 24px
+}
+
+.conteneur-cartes-activites {
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Carte */
+
+.carte-activite {
+    width: 100%;
+    max-width: 334px;
+}
+
+/* Grande carte */
+
+.grande-carte {
+    width: 100%;
+    max-width: 334px;
+    height: 190px;
+    position: relative;
+    border-radius: 14px;
+    transition: ease;
+    cursor: pointer; 
+    margin-bottom: 24px;
+}
+
+.grande-carte:hover {
+    box-shadow: 2px 2px 6px #797979;
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.activite-1-grande-carte {
+   background: url("../images/activites/vieux-port.jpg") no-repeat center / cover;
+}
+
+.activite-2-grande-carte {
+    background: url("../images/activites/parc-national.jpg") no-repeat center / cover;
+ }
+
+.grande-carte-description {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0px 0px 8px #d8d8d8;
+    padding: 0 19px;
+}
+
+
+/* Moyenne carte */
+
+.conteneur-moyenne-carte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moyenne-carte {
+    width: 100%;
+    max-width: 334px;
+    height: 190px;
+    position: relative;
+    border-radius: 14px;
+    transition: ease;
+    cursor: pointer; 
+    margin-bottom: 22px;
+}
+
+.moyenne-carte:hover {
+    box-shadow: 2px 2px 6px #797979;
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.activite-1-moyenne-carte {
+   background: url("../images/activites/fort-de-pomegues.jpg") no-repeat center / cover;
+}
+
+.activite-2-moyenne-carte {
+    background: url("../images/activites/Notre-dame.jpg") no-repeat center / cover;
+ }
+
+.description-moyenne-carte {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0px 0px 8px #d8d8d8;
+    padding: 0 19px;
+}
+
+/* petite carte */
+
+.conteneur-petite-carte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petite-carte {
+    width: 100%;
+    max-width: 334px;
+    height: 190px;
+    position: relative;
+    border-radius: 14px;
+    transition: ease;
+    cursor: pointer; 
+    margin-bottom: 22px;
+}
+
+.petite-carte:hover {
+    box-shadow: 2px 2px 6px #797979;
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.activite-1-petite-carte {
+   background: url("../images/activites/iles-du-frioul.jpg") no-repeat center / cover;
+}
+
+.activite-2-petite-carte {
+    background: url("../images/activites/parc-longchamp.jpg") no-repeat center / cover;
+ }
+
+.description-petite-carte {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0px 0px 8px #d8d8d8;
+    padding: 0 19px;
+}
