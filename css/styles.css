@@ -131,7 +131,7 @@ main {
 /*  Barre de recherche */
 
 .trouver-hebergement {
-    padding: 0 10px;
+    padding: 0 14px;
 }
 
 .trouver-hebergement + p {
@@ -237,6 +237,7 @@ form {
 .infos-logements {
     display: flex;
     align-items: center;
+    margin-top: 19px
 }
 
 .icone-infos {
@@ -464,7 +465,6 @@ form {
 }
 
 .conteneur-cartes-activites {
-    /* border: 3px solid greenyellow; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -639,4 +639,104 @@ form {
 
 .navigation-footer a {
    color: #3c3c3c;
+}
+
+
+/* Media queries --> support tablette*/ 
+
+@media only screen and (min-width: 600px) {
+ 
+  /* Section carte populaires */
+
+  .titre-populaire {
+    margin-bottom: 24px;
+  }
+
+  .conteneur-cartes-populaires {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .carte-populaire {
+        margin-right: 17px;
+    }
+
+/* Section carte hébergement */
+
+    .conteneur-cartes-hebergements {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .conteneur-hebergements > p {
+       margin-right: initial;
+    }
+
+    .titre-hebergement {
+        margin-bottom: 24px;
+    }
+
+    .carte-hebergement {
+        overflow: initial;
+        margin-right: 17px;
+        margin-top: 21px;
+    }
+
+    /* Section activité */
+
+    .titre-activite {
+        margin-left: initial;
+        margin-right: initial;
+        margin-bottom: 24px;
+    }
+
+    .conteneur-cartes-activites {
+        flex-wrap: wrap;
+        flex-direction: initial;
+    } 
+
+    .grande-carte {
+        height: 446px;
+        margin-bottom: 43px;
+    }
+
+    /* Position description */
+
+    .grande-carte-description {
+        top: 390px;
+    }
+
+    /* Moyenne carte */
+    
+    .conteneur-moyenne-carte {
+        margin: 0 42px;
+        width: initial;
+    }
+
+    .moyenne-carte {
+        height: 237px;
+        width: 302px;
+        margin-bottom: 45px;
+    }
+
+    /* Position description */
+
+    .description-moyenne-carte {
+        top: 181px;
+    }
+
+   /* Footer */
+
+    .conteneur-navigation-footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .navigation-footer {
+        padding: 26px;
+    }
 }
