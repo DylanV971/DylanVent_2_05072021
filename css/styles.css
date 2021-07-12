@@ -29,6 +29,7 @@ h3 {
 /* Lien */
 
 a {
+    color: #000;
     text-decoration: none;
 }
 
@@ -738,5 +739,46 @@ form {
 
     .navigation-footer {
         padding: 26px;
+    }
+}
+
+
+/*  Media queries --> support desktop */ 
+
+@media only screen and (min-width:1050px) {
+ 
+    .logo-entete {
+        width: initial;
+    }
+
+    /* Lien inscription cmobile cacher*/
+
+    #lien-inscription-mobile {
+        display: none;
+    }
+
+   /* Lien inscription desktop visible */
+
+   #lien-inscription {
+       display: block;
+   }
+
+
+    nav {
+        width: initial;
+    }
+
+    .menu-navigation li {
+        width: initial;
+    }
+
+    #lien-hebergement, #lien-activite {
+        order: -1;
+    }
+
+    #lien-hebergement a, #lien-activite a {
+        width: initial;
+        padding: 0;
+        border-bottom: none;
     }
 }
