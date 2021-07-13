@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* 
 Les bordures et les marges intérieurs sont inclus 
 dans la largeur des éléments 
@@ -5,6 +12,7 @@ dans la largeur des éléments
 */
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -52,18 +60,31 @@ a {
 /* Entete  */
 
 .entete {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /* Logo entête */
 
 .logo-entete {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 20px;
 }
@@ -75,6 +96,8 @@ nav {
 }
 
 .menu-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     padding-left: 0;
@@ -133,6 +156,8 @@ nav {
 }
 
 form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -142,10 +167,19 @@ form {
     background-color: #f2f2f2;
     height: 51px;
     width: 52px ; /*13%*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 18px;
     border-radius: 13px 0px 0px 13px;
 }
@@ -159,6 +193,22 @@ form {
     padding: 16px;
     font-size: 16px;
     font-weight: 600;
+    color: #000;
+}
+
+.zone-recherche::-webkit-input-placeholder {
+    color: #000;
+}
+
+.zone-recherche::-moz-placeholder {
+    color: #000;
+}
+
+.zone-recherche:-ms-input-placeholder {
+    color: #000;
+}
+
+.zone-recherche::-ms-input-placeholder {
     color: #000;
 }
 
@@ -186,14 +236,19 @@ form {
 /* Filtres */
 
 .filtres {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
 }
 
 /* Button filtre */
 
 .button-filtre {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 2px solid #dddddd;
     border-radius: 46px;
@@ -204,14 +259,22 @@ form {
 .button-filtre:hover {
     border-color: rgb(202, 202, 202);
     background-color: #F2F2F2;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
 .icone-button {
     background-color: #deebff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 52px;
     height: 51px;
     border: 2px solid transparent;
@@ -230,8 +293,12 @@ form {
 /* Infos-logement */
 
 .infos-logements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 19px
 }
 
@@ -258,15 +325,28 @@ form {
 }
 
 .titre-populaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .conteneur-cartes-populaires {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 100%;
 }
 
@@ -283,9 +363,14 @@ form {
     height: 144px;
     border-radius: 17px;
     padding: 5px;
-    box-shadow: 2px 2px 6px #b8b8b8;
+    -webkit-box-shadow: 2px 2px 6px #b8b8b8;
+            box-shadow: 2px 2px 6px #b8b8b8;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 11px;
 }
@@ -293,6 +378,8 @@ form {
 .carte-populaire a {
     color: #000;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
@@ -300,8 +387,11 @@ form {
 /* Effet au survol carte populaire */
 
 .carte-populaire:hover {
-    box-shadow: 2px 2px 6px #797979;
-    transform: scale(1.03);
+    -webkit-box-shadow: 2px 2px 6px #797979;
+            box-shadow: 2px 2px 6px #797979;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 /* paramètre carte populaire */
@@ -355,8 +445,12 @@ form {
 }
 
 .titre-hebergement {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 64px;
 }
 
@@ -367,9 +461,16 @@ form {
 
 
 .conteneur-cartes-hebergements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .carte-hebergement {
@@ -379,7 +480,10 @@ form {
     height: 199px;
     border-radius: 17px;
     padding: 5px;
-    box-shadow: 2px 2px 6px #b8b8b8;
+    -webkit-box-shadow: 2px 2px 6px #b8b8b8;
+            box-shadow: 2px 2px 6px #b8b8b8;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
     cursor: pointer;
     overflow: auto;
@@ -387,8 +491,11 @@ form {
 }
 
 .carte-hebergement:hover {
-    box-shadow: 2px 2px 6px #797979;
-    transform: scale(1.03);
+    -webkit-box-shadow: 2px 2px 6px #797979;
+            box-shadow: 2px 2px 6px #797979;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 .carte-hebergement a {
@@ -452,17 +559,31 @@ form {
 /* Section activité */
 
 .titre-activite {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;    
-    justify-content: center;
+    -webkit-box-pack: center;    
+        -ms-flex-pack: center;    
+            justify-content: center;
     margin-right: 159px;
     margin-left: 24px;
+    font-weight: 800;
 }
 
 .conteneur-cartes-activites {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 20px;
 }
 
@@ -481,14 +602,19 @@ form {
     height: 190px;
     position: relative;
     border-radius: 14px;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
     cursor: pointer; 
     margin-bottom: 24px;
 }
 
 .grande-carte:hover {
-    box-shadow: 2px 2px 6px #797979;
-    transform: scale(1.02);
+    -webkit-box-shadow: 2px 2px 6px #797979;
+            box-shadow: 2px 2px 6px #797979;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     opacity: 0.9;
 }
 
@@ -507,7 +633,8 @@ form {
     height: 56px;
     background-color: #fff;
     border-radius: 0 0 14px 14px;
-    box-shadow: 0px 0px 8px #d8d8d8;
+    -webkit-box-shadow: 0px 0px 8px #d8d8d8;
+            box-shadow: 0px 0px 8px #d8d8d8;
     padding: 0 19px;
 }
 
@@ -515,9 +642,16 @@ form {
 
 .conteneur-moyenne-carte {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .moyenne-carte {
@@ -526,14 +660,19 @@ form {
     height: 190px;
     position: relative;
     border-radius: 14px;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
     cursor: pointer; 
     margin-bottom: 22px;
 }
 
 .moyenne-carte:hover {
-    box-shadow: 2px 2px 6px #797979;
-    transform: scale(1.02);
+    -webkit-box-shadow: 2px 2px 6px #797979;
+            box-shadow: 2px 2px 6px #797979;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     opacity: 0.9;
 }
 
@@ -552,7 +691,8 @@ form {
     height: 56px;
     background-color: #fff;
     border-radius: 0 0 14px 14px;
-    box-shadow: 0px 0px 8px #d8d8d8;
+    -webkit-box-shadow: 0px 0px 8px #d8d8d8;
+            box-shadow: 0px 0px 8px #d8d8d8;
     padding: 0 19px;
 }
 
@@ -560,9 +700,16 @@ form {
 
 .conteneur-petite-carte {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .petite-carte {
@@ -571,14 +718,19 @@ form {
     height: 190px;
     position: relative;
     border-radius: 14px;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
     cursor: pointer; 
     margin-bottom: 22px;
 }
 
 .petite-carte:hover {
-    box-shadow: 2px 2px 6px #797979;
-    transform: scale(1.02);
+    -webkit-box-shadow: 2px 2px 6px #797979;
+            box-shadow: 2px 2px 6px #797979;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     opacity: 0.9;
 }
 
@@ -597,7 +749,8 @@ form {
     height: 56px;
     background-color: #fff;
     border-radius: 0 0 14px 14px;
-    box-shadow: 0px 0px 8px #d8d8d8;
+    -webkit-box-shadow: 0px 0px 8px #d8d8d8;
+            box-shadow: 0px 0px 8px #d8d8d8;
     padding: 0 19px;
 }
 
@@ -606,9 +759,16 @@ form {
 .conteneur-navigation-footer {
     background-color: #f2f2f2;
     padding: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .navigation-footer {
@@ -686,6 +846,8 @@ form {
 
     #lien-hebergement a:hover, #lien-activite a:hover { 
         color: #0065fc;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
         transition: .3s;
     }
 
@@ -696,9 +858,15 @@ form {
     }
 
     .conteneur-cartes-populaires {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .carte-populaire {
@@ -708,9 +876,15 @@ form {
     /* Section carte hébergement */
 
     .conteneur-cartes-hebergements {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .conteneur-hebergements > p {
@@ -736,8 +910,12 @@ form {
     }
 
     .conteneur-cartes-activites {
-        flex-wrap: wrap;
-        flex-direction: initial;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: initial;
+        -webkit-box-direction: initial;
+            -ms-flex-direction: initial;
+                flex-direction: initial;
     } 
 
     .grande-carte {
@@ -782,6 +960,7 @@ form {
         height: 56px;
         background-color: #fff;
         border-radius: 0 0 14px 14px;
+        -webkit-box-shadow: 0px 0px 8px #d8d8d8;
         box-shadow: 0px 0px 8px #d8d8d8;
         padding: 0 19px;
     }
@@ -799,9 +978,16 @@ form {
     /* Footer */
 
     .conteneur-navigation-footer {
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
     }
 
     .navigation-footer {
@@ -842,7 +1028,9 @@ form {
     /* menu de navigation */
 
     #lien-hebergement, #lien-activite {
-        order: -1;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
     }
 
     #lien-hebergement a, #lien-activite a {
@@ -861,8 +1049,12 @@ form {
    /*Filtres */
 
    .conteneur-filtres {
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
-       align-items: center;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
        margin-top: 23px;
    }
 
@@ -881,9 +1073,16 @@ form {
     /*Section hébergement */
 
     #hebergements {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
-        flex-direction: row-reverse;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
         /* margin-left: 50px; */
     }
 
@@ -899,13 +1098,17 @@ form {
     }
 
     .titre-hebergement {
-        justify-content: initial;
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
         margin-right: initial;
         margin-bottom: 10px;
     }
 
     .conteneur-cartes-hebergements {
-        justify-content: initial;
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
     }
 
     .carte-hebergement {
@@ -922,7 +1125,10 @@ form {
     }
     
     .conteneur-cartes-populaires {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 420px;
     }
 
@@ -932,20 +1138,31 @@ form {
 
     /*  Section activité */
 
+    #activites {
+        margin-top: 36px;
+    }
+
     .titre-activite {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         margin-left: initial;
     }
 
     .conteneur-cartes-activites {
-        flex-wrap: nowrap;
-        justify-content: initial;
+        -ms-flex-wrapa: nowrp;
+            flex-wrap: nowrap;
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
         padding: initial;
     }
 
     /* footer */
 
     .conteneur-navigation-footer {
-        justify-content: initial;
+        -webkit-box-pack: initial;
+            -ms-flex-pack: initial;
+                justify-content: initial;
     }
 }
