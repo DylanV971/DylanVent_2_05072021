@@ -204,6 +204,7 @@ form {
 .button-filtre:hover {
     border-color: rgb(202, 202, 202);
     background-color: #F2F2F2;
+    transition: .5s;
 }
 
 .icone-button {
@@ -688,6 +689,7 @@ form {
 
     #lien-hebergement a:hover, #lien-activite a:hover { 
         color: #0065fc;
+        transition: .3s;
     }
 
     /* Section carte populaire */
@@ -777,7 +779,6 @@ form {
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
-        flex-wrap: wrap;
     }
 
     .navigation-footer {
