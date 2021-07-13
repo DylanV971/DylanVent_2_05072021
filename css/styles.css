@@ -682,6 +682,14 @@ form {
         border-bottom: none;
     }
 
+    #lien-hebergement  a{
+        color: #000;
+    }
+
+    #lien-hebergement a:hover, #lien-activite a:hover { 
+        color: #0065fc;
+    }
+
     /* Section carte populaire */
 
     .titre-populaire {
