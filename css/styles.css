@@ -629,7 +629,6 @@ form {
 .navigation-footer ul {
     list-style: none;
     padding-left: 0;
-    /* width: 70%; */
 
 }
 
@@ -645,25 +644,70 @@ form {
 
 /* Media queries --> support tablette*/ 
 
-@media only screen and (min-width: 600px) {
- 
-  /* Section carte populaires */
+@media only screen and (min-width: 719px) {
 
-  .titre-populaire {
-    margin-bottom: 24px;
-  }
+    .logo-entete {
+        width: initial;
+    }
 
-  .conteneur-cartes-populaires {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* Lien inscription mobile cacher*/
+
+    #lien-inscription-mobile {
+        display: none;
+    }
+
+   /* Lien inscription desktop visible */
+
+   #lien-inscription  {
+       display: block;
+   }
+
+    nav {
+        width: initial;
+    }
+
+    .menu-navigation {
+        margin: 0;
+        height: 106px;
+    }
+
+    .menu-navigation li {
+        margin-right: 66px;
+        width: initial;
+    }
+
+    .menu-navigation a {
+        display: inline-block;
+        padding: 40px 20px 0 20px !important;
+    }
+
+    .menu-navigation a:hover {
+        border-top: 2px solid #0065fc;        
+    }
+
+    #lien-hebergement a, #lien-activite a {
+        width: initial;
+        padding: initial;
+        border-bottom: none;
+    }
+
+    /* Section carte populaire */
+
+    .titre-populaire {
+        margin-bottom: 24px;
+    }
+
+    .conteneur-cartes-populaires {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .carte-populaire {
         margin-right: 17px;
     }
 
-/* Section carte hébergement */
+    /* Section carte hébergement */
 
     .conteneur-cartes-hebergements {
         flex-direction: row;
@@ -728,7 +772,7 @@ form {
         top: 181px;
     }
 
-   /* Footer */
+    /* Footer */
 
     .conteneur-navigation-footer {
         flex-direction: row;
@@ -745,50 +789,44 @@ form {
 
 /*  Media queries --> support desktop */ 
 
-@media only screen and (min-width:1050px) {
+@media only screen and (min-width:1300px) {
 
     .entete {
-        /* padding: 1px 45px; */
-        padding: 1px 45px 0 36px;
+        padding: 1px 45px;
     }
  
     .logo-entete {
-        width: initial;
+        padding: initial;
     }
 
-    /* Lien inscription mobile cacher*/
+    .button-recherche {
+        width: 134px;
+        border-radius: 0 13px 13px 0;
+    }
 
-    #lien-inscription-mobile {
+    #recherche-mobile {
         display: none;
     }
 
-   /* Lien inscription desktop visible */
+    #recherche-desktop {
+        display: block;
+    } 
 
-   #lien-inscription  {
-       display: block;
-   }
-
-   .button-recherche {
-       width: 134px;
-       border-radius: 0 13px 13px 0;
-   }
-
-   #recherche-mobile {
-       display: none;
-   }
-
-   #recherche-desktop {
-       display: block;
+    #lien-hebergement, #lien-activite {
+        order: -1;
     }
 
-   /* section trouver hebergement */
+    #lien-hebergement a, #lien-activite a {
+        width: initial;
+        padding: initial;
+        border-bottom: none;
+    } 
 
-   .trouver-hebergement {
-        /* padding: 0px 66px; */
-        /* padding: 0px 23px; */
-        padding: 0px 56px;
 
-   }
+    main {
+        width: 95%;
+        margin: auto;
+    }
 
    /*Filtres */
 
@@ -806,42 +844,9 @@ form {
        margin-right: 24px;
    }
 
-   /* Menu de navigation  desktop*/
-
-    nav {
-        width: initial;
-    }
-
-    .menu-navigation {
-        margin: 0;
-        height: 106px;
-    }
-
-    .menu-navigation li {
-        margin-right: 66px;
-        width: initial;
-    }
-
-    .menu-navigation a {
-        display: inline-block;
-        padding: 40px 20px 0 20px !important;
-    }
-
-
-    .menu-navigation a:hover {
-        border-top: 2px solid #0065fc;        
-    }
-
-
-    #lien-hebergement, #lien-activite {
-        order: -1;
-    }
-
-    #lien-hebergement a, #lien-activite a {
-        width: initial;
-        padding: initial;
-        border-bottom: none;
-    }
+   .button-recherche {
+       font-size: inherit;
+   }
 
     /*Section hébergement */
 
@@ -849,7 +854,7 @@ form {
         display: flex;
         justify-content: flex-end;
         flex-direction: row-reverse;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .conteneur-hebergements > p {
@@ -899,12 +904,13 @@ form {
 
     .titre-activite {
         justify-content: flex-start;
-        margin-left: 20px;
+        margin-left: initial;
     }
 
     .conteneur-cartes-activites {
         flex-wrap: nowrap;
         justify-content: initial;
+        padding: initial;
     }
 
     /* footer */
@@ -912,5 +918,4 @@ form {
     .conteneur-navigation-footer {
         justify-content: initial;
     }
-
 }
