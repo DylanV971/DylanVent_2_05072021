@@ -26,7 +26,7 @@ h3 {
     font-size: 17px;
 }
 
-/* Lien */
+/* Liens */
 
 a {
     color: #000;
@@ -121,13 +121,6 @@ nav {
     border-bottom: 3px solid #f2f2f2 ;
     width: 100%;
 }
-
-/* Contenu principal --> main */
-
-/* 
-main {
-    border: 3px solid green;
-} */
 
 /*  Barre de recherche */
 
@@ -280,7 +273,7 @@ form {
     margin-left: 104px;
 }
 
-/* Cartes Populaires */
+/* Carte Populaire */
 
 .carte-populaire {
     background-color:  #fff;
@@ -439,7 +432,6 @@ form {
 /* contenu carte hebergement*/
 
 .description-carte-hebergement {
-    /* overflow:auto; */
     padding: 4px 9px;
 }
 
@@ -473,7 +465,7 @@ form {
     padding: 0 20px;
 }
 
-/* Carte */
+/* Carte  */
 
 .carte-activite {
     width: 100%;
@@ -517,7 +509,6 @@ form {
     box-shadow: 0px 0px 8px #d8d8d8;
     padding: 0 19px;
 }
-
 
 /* Moyenne carte */
 
@@ -617,13 +608,11 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .navigation-footer {
     width: 100%;
     max-width: 332px;
-
 }
 
 .navigation-footer ul {
@@ -661,6 +650,8 @@ form {
    #lien-inscription  {
        display: block;
    }
+
+   /* Menu de navigation */
 
     nav {
         width: initial;
@@ -791,6 +782,8 @@ form {
 
 @media only screen and (min-width:1300px) {
 
+    /* Entête de la page --> header*/
+
     .entete {
         padding: 1px 45px;
     }
@@ -798,6 +791,8 @@ form {
     .logo-entete {
         padding: initial;
     }
+
+    /* Button barre de recherche */
 
     .button-recherche {
         width: 134px;
@@ -812,6 +807,8 @@ form {
         display: block;
     } 
 
+    /* menu de navigation */
+
     #lien-hebergement, #lien-activite {
         order: -1;
     }
@@ -822,6 +819,7 @@ form {
         border-bottom: none;
     } 
 
+    /* Corps principal --> main */
 
     main {
         width: 95%;
