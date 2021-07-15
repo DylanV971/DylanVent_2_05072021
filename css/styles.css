@@ -360,7 +360,6 @@ form {
     background-color:  #fff;
     width: 100%;
     max-width: 334px;     
-    height: 144px;
     border-radius: 17px;
     padding: 5px;
     -webkit-box-shadow: 2px 2px 6px #b8b8b8;
@@ -399,7 +398,6 @@ form {
 .image-carte-populaire {
     width: 100%;
     max-width: 127px;
-    height: 134px;
     border-radius: 13px 0 0px 13px;
 }
 
@@ -420,8 +418,7 @@ form {
 /* Description carte populaire*/
 
 .description-carte-populaire {
-    overflow:auto;
-    margin-left: 5px;
+    margin-left: 21px;
 }
 
 .description-carte-populaire h3 {
@@ -477,7 +474,6 @@ form {
     background-color:  #fff;
     width: 100%;     
     max-width: 335px;
-    height: 199px;
     border-radius: 17px;
     padding: 5px;
     -webkit-box-shadow: 2px 2px 6px #b8b8b8;
@@ -486,7 +482,6 @@ form {
     -o-transition: ease;
     transition: ease;
     cursor: pointer;
-    overflow: auto;
     margin-bottom: 12px;
 }
 
@@ -584,6 +579,7 @@ form {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1337px;
     padding: 0 20px;
 }
 
@@ -834,7 +830,8 @@ form {
     }
 
     .menu-navigation a:hover {
-        border-top: 2px solid #0065fc;        
+        border-top: 2px solid #0065fc; 
+        transition: .3s;
     }
 
     #lien-hebergement a, #lien-activite a {
@@ -1134,6 +1131,7 @@ form {
 
     .carte-populaire {
         width: 343px;
+        margin-bottom: 33px;
     }
 
     /*  Section activité */
