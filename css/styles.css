@@ -112,23 +112,17 @@ nav {
     color: inherit;
 }
 
-/* Lien mobile */
-
-#lien-inscription-mobile {
-    color: #0065fc;
-    font-weight: 700;
-} 
+/* Lien inscription mobile*/
 
 #lien-inscription  {
     color: #0065fc;
     font-weight: 700;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 40%;
 }
 
-/* Lien inscription desktop cacher */
-
-#lien-inscription {
-    display: none;
-}
 
 #lien-hebergement a {
     display: inline-block;
@@ -191,8 +185,9 @@ form {
     height: 51px;
     border: 1px solid #f2f2f2;
     padding: 16px;
+    font-family: "raleway",sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 
@@ -224,13 +219,14 @@ form {
 
 .button-recherche {
     width: 51px;
-    height: 53px;
+    height: 51px;
     border-radius: 13px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid transparent;
     background-color: #0065fc;
+    font-family: "raleway",sans-serif;
+    font-weight: 500;
     color: #fff;
     margin-left: -20px;
-    margin-top: -1px
 }
 
 /* Filtres */
@@ -796,18 +792,6 @@ form {
         width: initial;
     }
 
-    /* Lien inscription mobile cacher*/
-
-    #lien-inscription-mobile {
-        display: none;
-    }
-
-   /* Lien inscription desktop visible */
-
-   #lien-inscription  {
-       display: block;
-   }
-
    /* Menu de navigation */
 
     nav {
@@ -832,6 +816,13 @@ form {
     .menu-navigation a:hover {
         border-top: 2px solid #0065fc; 
         transition: .3s;
+    }
+
+    #lien-inscription {
+        position: initial;
+        top: initial;
+        right: initial;
+        width: initial;
     }
 
     #lien-hebergement a, #lien-activite a {
@@ -1142,25 +1133,55 @@ form {
 
     .titre-activite {
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
         margin-left: initial;
     }
 
     .conteneur-cartes-activites {
         -ms-flex-wrapa: nowrp;
-            flex-wrap: nowrap;
+        flex-wrap: nowrap;
         -webkit-box-pack: initial;
-            -ms-flex-pack: initial;
-                justify-content: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
         padding: initial;
+    }
+
+    /* Cartes activites */
+    
+    .grande-carte {
+        margin-bottom: initial;
+    }
+
+    .moyenne-carte {
+        margin-bottom: 45px;
+    }
+
+    .activite-2-moyenne-carte {
+        margin-bottom: 41px;
+    }
+
+    .petite-carte {
+        margin-bottom: initial;
+    }
+
+    .activite-2-petite-carte {
+        height: 209px;
+    }
+
+    .activite-2-petite-carte > .description-petite-carte {
+        top: 154px;
     }
 
     /* footer */
 
+    footer {
+        margin-top: 61px;
+    }
+
     .conteneur-navigation-footer {
         -webkit-box-pack: initial;
-            -ms-flex-pack: initial;
-                justify-content: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
     }
 }
