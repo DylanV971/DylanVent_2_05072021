@@ -112,23 +112,17 @@ nav {
     color: inherit;
 }
 
-/* Lien mobile */
-
-#lien-inscription-mobile {
-    color: #0065fc;
-    font-weight: 700;
-} 
+/* Lien inscription mobile*/
 
 #lien-inscription  {
     color: #0065fc;
     font-weight: 700;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 40%;
 }
 
-/* Lien inscription desktop cacher */
-
-#lien-inscription {
-    display: none;
-}
 
 #lien-hebergement a {
     display: inline-block;
@@ -798,18 +792,6 @@ form {
         width: initial;
     }
 
-    /* Lien inscription mobile cacher*/
-
-    #lien-inscription-mobile {
-        display: none;
-    }
-
-   /* Lien inscription desktop visible */
-
-   #lien-inscription  {
-       display: block;
-   }
-
    /* Menu de navigation */
 
     nav {
@@ -834,6 +816,13 @@ form {
     .menu-navigation a:hover {
         border-top: 2px solid #0065fc; 
         transition: .3s;
+    }
+
+    #lien-inscription {
+        position: initial;
+        top: initial;
+        right: initial;
+        width: initial;
     }
 
     #lien-hebergement a, #lien-activite a {
